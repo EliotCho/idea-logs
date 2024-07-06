@@ -35,24 +35,30 @@ footer {
   font-size: 1.5em;
 }
 
-li a {
-  padding: 5px;
-  /* align-items: flex-start; */
-}
-
 .footer-title {
   padding: 5px;
   text-align: center;
 }
-.footer-content {
-  float: left;
+
+footer ul {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.dark-mode {
+.dark-mode .main-blog {
   .main-blog {
     background-color: black;
     color: white;
   }
-  /* background-color: grey;
-  color: white; */
+  background-color: grey;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-blog {
+    font-size: 1.5em;
+    padding: 10px;
+  }
 }

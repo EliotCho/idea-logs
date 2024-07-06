@@ -1,5 +1,4 @@
 body {
-  /* display: block; */
   margin: 0px;
 }
 
@@ -24,29 +23,29 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+li {
+  padding: 10px;
+}
+
 li a {
-  /* text-align: center; */
-  /* padding: 14px 16px; */
   text-decoration: none;
   padding: 5px;
 }
 
 li a:hover {
-  background-color: lightblue;
+  background: lightblue;
 }
 
 .main-index {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  /* height: 90vh; */
+  justify-content: space-evenly;
   min-height: 100vh;
   overflow: hidden;
   background-color: beige;
@@ -55,7 +54,7 @@ li a:hover {
 .circle {
   height: 500px;
   width: 500px;
-
+  min-width: 500px;
   border-radius: 50%; /* or 50% */
 
   background-color: lightgreen;
@@ -76,15 +75,44 @@ li a:hover {
   font-size: 1.5em;
   padding: 15px;
   color: green;
+  min-width: 600px;
 }
 
 .idea-section > * {
+  min-width: 500px;
   margin: 5px;
   padding: 5px;
 }
 
+.idea-section h2 {
+  text-align: center;
+}
 
 .dark-mode {
-    background-color: grey;
-    color: white;
+  background-color: grey;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-index {
+    flex-direction: column;
   }
+
+  .circle {
+    height: 400px;
+    width: 400px;
+    min-width: 400px;
+    font-size: 1.5em;
+    margin: 10px;
+  }
+
+  .idea-section {
+    margin: 10px;
+    min-width: 400px;
+    font-size: 1.5em;
+  }
+
+  .idea-section > * {
+    min-width: 400px;
+  }
+}
