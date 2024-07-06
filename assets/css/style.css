@@ -21,17 +21,20 @@ header h1 {
 }
 
 ul {
-  /* list-style-type: none; */
+  list-style-type: none;
   margin: 0;
   padding: 0;
   /* overflow: hidden; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 li a {
-  display: block;
   /* text-align: center; */
   /* padding: 14px 16px; */
   text-decoration: none;
+  padding: 5px;
 }
 
 li a:hover {
@@ -79,3 +82,9 @@ li a:hover {
   margin: 5px;
   padding: 5px;
 }
+
+
+.dark-mode {
+    background-color: grey;
+    color: white;
+  }

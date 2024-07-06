@@ -16,11 +16,16 @@
       <nav>
         <ul>
           <li><a href="./blog.html">Blog</a></li>
+          <li>
+            <button id="theme-switcher" onclick="themeChange()">
+              Toggle dark mode
+            </button>
+            <!-- <label>
+              <input type="checkbox"  id="theme-switcher"/>
+              <h3>Theme Switch</h3>
+            </label> -->
+          </li>
         </ul>
-        <label>
-          <input type="checkbox" id="theme-switcher" />
-          <h3>Theme Switch</h3>
-        </label>
       </nav>
     </header>
     <!-- header ends here -->
@@ -45,7 +50,7 @@
           name="idea-description"
           required
         ></textarea>
-        <button type="submit">Submit Idea</button>
+        <button type="submit" id="content-submit">Submit Idea</button>
         <!-- </form> -->
       </section>
     </main>
