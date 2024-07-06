@@ -34,6 +34,10 @@ li a {
   text-decoration: none;
 }
 
+li a:hover {
+  background-color: lightblue;
+}
+
 .main-index {
   display: flex;
   flex-direction: row;
@@ -51,8 +55,8 @@ li a {
 
   border-radius: 50%; /* or 50% */
 
-  background-color: yellowgreen;
-  color: white;
+  background-color: lightgreen;
+  color: green;
   text-align: center;
   font-size: 2em;
   display: flex;
@@ -65,62 +69,13 @@ li a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: orange;
+  background-color: lightgreen;
   font-size: 1.5em;
   padding: 15px;
+  color: green;
 }
 
 .idea-section > * {
   margin: 5px;
   padding: 5px;
-}
-
-.main-blog {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  overflow: hidden;
-  font-size: 1.5em;
-  background-color: lightblue;
-}
-
-.main-blog > * {
-  margin: 5px;
-  padding: 5px;
-  border: 2px solid black;
-  border-radius: 5px;
-  border-top: 2px solid black;
-  font-size: 1em;
-}
-
-.main-blog > * > h2 {
-  border-bottom: 2px solid black;
-}
-
-.main-blog > * > * {
-  margin: 10px;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  background-color: yellowgreen;
-  color: white;
-  padding: 10px;
-  font-size: 1.5em;
-}
-
-footer > * {
-  border: 5px solid black;
-}
-
-.footer-title{
-    text-align: center;
-}
-.footer-content{
-    float: left;
 }
