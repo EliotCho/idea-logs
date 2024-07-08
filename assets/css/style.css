@@ -1,3 +1,4 @@
+/* light theme colors */
 :root {
   --background-color-main: beige;
   --border-color: black;
@@ -8,6 +9,7 @@
   --circle-color: lightgreen;
 }
 
+/* dark theme colors */
 .dark {
   --background-color-main: grey;
   --border-color: white;
@@ -22,6 +24,7 @@ body {
   margin: 0px;
 }
 
+/* header css heres here */
 header {
   display: flex;
   flex-direction: row;
@@ -39,6 +42,7 @@ header h1 {
   margin-left: 10px;
 }
 
+/* nav css here */
 ul {
   list-style-type: none;
   margin: 0;
@@ -64,7 +68,9 @@ li a:hover {
 button {
   margin: 15px;
 }
+/* header and nav css ends here */
 
+/* main body css starts here */
 .main-index {
   display: flex;
   flex-direction: row;
@@ -75,6 +81,7 @@ button {
   background-color: var(--background-color-main);
 }
 
+/* main page circle on left side */
 .circle {
   height: 500px;
   width: 500px;
@@ -90,6 +97,7 @@ button {
   justify-content: center;
 }
 
+/* css where user input idea */
 .idea-section {
   display: flex;
   flex-direction: column;
@@ -111,7 +119,10 @@ button {
 .idea-section h2 {
   text-align: center;
 }
+/* main css ends here */
 
+/* for smaller screen size */
+/* flex direction in column to fit everything better */
 @media screen and (max-width: 1000px) {
   .main-index {
     flex-direction: column;

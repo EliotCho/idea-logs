@@ -1,3 +1,4 @@
+/* light theme colors */
 :root {
   --background-color-main: beige;
   --border-color: black;
@@ -8,6 +9,7 @@
   --circle-color: lightgreen;
 }
 
+/* dark theme colors */
 .dark {
   --background-color-main: grey;
   --border-color: white;
@@ -22,6 +24,7 @@ button {
   margin: 5px;
 }
 
+/* main body css starts here */
 .main-blog {
   display: flex;
   flex-direction: column;
@@ -56,6 +59,9 @@ section {
   max-width: 99%;
 }
 
+/* main body of css ends here */
+
+/* header css starts here */
 footer {
   display: flex;
   flex-direction: column;
@@ -76,7 +82,9 @@ footer ul {
   flex-direction: column;
   align-items: flex-start;
 }
+/* footer css ends here */
 
+/* when screen gets smaller */
 @media screen and (max-width: 1000px) {
   .main-blog {
     font-size: 1.5em;
