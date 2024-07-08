@@ -26,34 +26,22 @@ function formSubmit(event) {
       "Description incomplete, please fill out the form";
   } else {
     let openBlog = document.createElement("a");
-    // let openBlog = addAttritube("a");
     openBlog.href = "./blog.html";
     // openBlog.target = "_blank"; // Open in new tab
     openBlog.click();
 
+    // create an object to store the form data
     const article = {
       userName: userName,
       title: title,
       content: content,
     };
 
-    console.log(article.userName);
-    console.log(article.title);
-    console.log(article.content);
-
     tempStorageObject.push(article);
     localStorage.setItem(
       "tempStorageObject",
       JSON.stringify(tempStorageObject)
     );
-    renderData();
-    // document.querySelector("#username").value = "";
-    // document.querySelector("#idea-title").value = "";
-    // document.querySelector("#idea-description").value = "";
-    // localStorage.clear();
-    // setTimeout(() => {
-    //   window.location.href = "./blog.html";
-    // }, 100);
   }
 }
 

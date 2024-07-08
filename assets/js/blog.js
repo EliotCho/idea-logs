@@ -2,15 +2,12 @@ const paste_here = document.getElementById("article-comes-here");
 const ideaList = document.querySelector(".main-blog");
 
 function renderData() {
-  console.log("renderData is running");
-  // get the data from local storage
+  // get the data from local storage, if null it will return an empty array
   let tempStorageObject =
     JSON.parse(localStorage.getItem("tempStorageObject")) || [];
 
   // if there is no data, return
   if (tempStorageObject.length === 0) return;
-
-  // ideaList.innerHTML = "";
 
   // loop through the data
   if (tempStorageObject.length > 0) {
@@ -28,7 +25,6 @@ function renderData() {
       section.appendChild(p);
       section.appendChild(h3);
       ideaList.appendChild(section);
-      // paste_here.appendChild(ideaList);
     });
   } else {
     console.log("No data to render");
