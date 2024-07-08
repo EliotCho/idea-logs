@@ -4,14 +4,18 @@
   --header-color: yellowgreen;
   --text-color: green;
   --nav-text-color: white;
+  --hover-color: lightblue;
+  --circle-color: lightgreen;
 }
 
 .dark {
   --background-color-main: grey;
-  --border-color: black;
-  --header-color: yellowgreen;
-  --text-color: green;
+  --border-color: white;
+  --header-color: black;
+  --text-color: white;
   --nav-text-color: white;
+  --hover-color: lightgreen;
+  --circle-color: lightblue;
 }
 
 body {
@@ -23,8 +27,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: yellowgreen;
-  color: white;
+  background-color: var(--header-color);
+  color: var(--nav-text-color);
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -57,6 +61,10 @@ li a:hover {
   background: lightblue;
 }
 
+button {
+  margin: 15px;
+}
+
 .main-index {
   display: flex;
   flex-direction: row;
@@ -73,8 +81,8 @@ li a:hover {
   min-width: 500px;
   border-radius: 50%; /* or 50% */
 
-  background-color: lightgreen;
-  color: green;
+  background-color: var(--circle-color);
+  color: var(--text-color);
   text-align: center;
   font-size: 2em;
   display: flex;
@@ -87,10 +95,10 @@ li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: lightgreen;
+  background-color: var(--circle-color);
   font-size: 1.5em;
   padding: 15px;
-  color: green;
+  color: var(--text-color);
   min-width: 600px;
 }
 

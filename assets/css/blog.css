@@ -4,14 +4,22 @@
   --header-color: yellowgreen;
   --text-color: green;
   --nav-text-color: white;
+  --hover-color: lightblue;
+  --circle-color: lightgreen;
 }
 
 .dark {
   --background-color-main: grey;
-  --border-color: black;
-  --header-color: yellowgreen;
-  --text-color: green;
+  --border-color: white;
+  --header-color: black;
+  --text-color: white;
   --nav-text-color: white;
+  --hover-color: lightgreen;
+  --circle-color: lightblue;
+}
+
+button {
+  margin: 5px;
 }
 
 .main-blog {
@@ -28,14 +36,14 @@
 .main-blog > * {
   margin: 5px;
   padding: 5px;
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
   border-radius: 5px;
-  border-top: 2px solid black;
+  border-top: 2px solid var(--border-color);
   font-size: 1em;
 }
 
 .main-blog > * > h2 {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--border-color);
 }
 
 .main-blog > * > * {
@@ -45,8 +53,8 @@
 footer {
   display: flex;
   flex-direction: column;
-  background-color: lightgreen;
-  color: green;
+  background-color: var(--circle-color);
+  color: var(--text-color);
   padding: 10px;
   font-size: 1.5em;
 }
@@ -61,15 +69,6 @@ footer ul {
   float: left;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.dark-mode .main-blog {
-  .main-blog {
-    background-color: black;
-    color: white;
-  }
-  background-color: grey;
-  color: white;
 }
 
 @media screen and (max-width: 1000px) {
