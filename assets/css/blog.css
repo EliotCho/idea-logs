@@ -1,3 +1,19 @@
+:root {
+  --background-color-main: beige;
+  --border-color: black;
+  --header-color: yellowgreen;
+  --text-color: green;
+  --nav-text-color: white;
+}
+
+.dark {
+  --background-color-main: grey;
+  --border-color: black;
+  --header-color: yellowgreen;
+  --text-color: green;
+  --nav-text-color: white;
+}
+
 .main-blog {
   display: flex;
   flex-direction: column;
@@ -6,7 +22,7 @@
   min-height: 100vh;
   overflow: hidden;
   font-size: 1.5em;
-  background-color: beige;
+  background-color: var(--background-color-main);
 }
 
 .main-blog > * {
@@ -41,10 +57,10 @@ footer {
 }
 
 footer ul {
-    display: flex;
-    float: left;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .dark-mode .main-blog {

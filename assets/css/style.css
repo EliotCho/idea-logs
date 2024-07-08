@@ -1,3 +1,19 @@
+:root {
+  --background-color-main: beige;
+  --border-color: black;
+  --header-color: yellowgreen;
+  --text-color: green;
+  --nav-text-color: white;
+}
+
+.dark {
+  --background-color-main: grey;
+  --border-color: black;
+  --header-color: yellowgreen;
+  --text-color: green;
+  --nav-text-color: white;
+}
+
 body {
   margin: 0px;
 }
@@ -48,7 +64,7 @@ li a:hover {
   justify-content: space-evenly;
   min-height: 100vh;
   overflow: hidden;
-  background-color: beige;
+  background-color: var(--background-color-main);
 }
 
 .circle {
@@ -86,11 +102,6 @@ li a:hover {
 
 .idea-section h2 {
   text-align: center;
-}
-
-.dark-mode {
-  background-color: grey;
-  color: white;
 }
 
 @media screen and (max-width: 1000px) {
