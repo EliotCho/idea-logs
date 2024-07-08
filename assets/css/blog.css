@@ -50,6 +50,12 @@ button {
   margin: 10px;
 }
 
+/* all displaying items will box that fits the whole page regardless of context input */
+section {
+  min-width: 99%;
+  max-width: 99%;
+}
+
 footer {
   display: flex;
   flex-direction: column;

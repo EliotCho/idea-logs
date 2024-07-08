@@ -22,7 +22,7 @@ function renderData() {
       const section = document.createElement("section");
       h2.textContent = tempStorageObject.title;
       p.textContent = tempStorageObject.content;
-      h3.textContent = tempStorageObject.userName;
+      h3.textContent = "Posted by: " + tempStorageObject.userName;
 
       section.appendChild(h2);
       section.appendChild(p);
