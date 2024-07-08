@@ -26,6 +26,7 @@ function formSubmit(event) {
       "Description incomplete, please fill out the form";
   } else {
     let openBlog = document.createElement("a");
+    // let openBlog = addAttritube("a");
     openBlog.href = "./blog.html";
     // openBlog.target = "_blank"; // Open in new tab
     openBlog.click();
