@@ -12,7 +12,22 @@ function colorChange() {
   myColor = themeColor.textContent
   if (myColor == "Light") {
     themeColor.textContent = "Dark";
+    localStorage.setItem("theme", "dark");
   } else {
     themeColor.textContent = "Light";
+    localStorage.setItem("theme", "light");
   }
 }
+
+function checkTheme() {
+  let theme = localStorage.getItem("theme");
+  if (theme == "dark" && themeColor == "Light") {
+    document.documentElement.classList.toggle("dark");
+  colorChange();
+  } else {
+    document.documentElement.classList.toggle("dark");
+  colorChange();
+  }
+}
+
+checkTheme()
